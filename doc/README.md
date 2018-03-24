@@ -51,7 +51,7 @@
 
 ### 网络通信
 1. c++ tcp/udp
-* [代码](../../moduleA/README.md)
+* [代码](https://github.com/yongjing2018/moduleA)
 2. java netty
 3. tcpdump以及windows下的wireshark的分析工具
 
