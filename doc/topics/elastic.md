@@ -4,5 +4,13 @@
 但是结构化数据的列式存储，却是业务应用中最为常用的方式。
 
 ## ES读写流程
+1. ES服务启动
+> ES服务类型主要分为 masternode, datanode, coordnode三种类型。
+2. 创建／删除／修改Index
+> client会通过coordnode访问masternode，在masternode进行index的管理，添加的时候会根据replica的数量以及datanode进行资源的分配。
+3. 添加数据
+> client会访问coordnode，coodnode会查看对应index-type对应的数据放在datanode的位置，包括routing的定义。
+
+
 
 ## ES收益
