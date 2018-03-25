@@ -11,7 +11,7 @@
 3. 添加数据
 > client会访问coordnode，coodnode会查看对应index-type对应的数据放在datanode的位置，包括routing的定义。
 数据在datanode中的处理流程：
-1. 接收数据写入到AL日志中，并更加replica数同步到时其他的datanode，等一切ok；
+1. 接收数据写入到WAL日志中，并更加replica数同步到时其他的datanode，等一切ok；
   存储采用：index， type，然后是 property等进行文件等读写
 2. 返回结果
 
